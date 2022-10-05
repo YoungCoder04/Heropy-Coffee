@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+main{padding-top:120px;}
+
+.badges{
+  width:130px;
+  position:fixed;
+  right:5px;top:125px;
+  z-index:1000;
+}
+.badges img{
+  border-radius:10px;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
+
+/*비주얼영역서식*/
+.visual{
+  height:646px;
+  background:url('../images/visual_bg.jpg');
+}
+.visual h2{display:none;}
+.visual .inner{
+  width:1100px;height:646px;
+  margin:0px auto;
+  position:relative; /*자식요소의 기준*/
+}
+
+.title, .cup1, .cup1_txt, .cup2, .cup2_txt, .spoon{
+  position:absolute;
+}
+.title{top:40px;left:-10px;}
+.cup1{bottom:0px;right:-47px;}
+.cup1_txt{top:40px;right:60px;}
+.cup2{bottom:0px;right:162px;}
+.cup2_txt{top:186px;right:412px;}
+.spoon{bottom:0px;left:275px;}
+
+.detail_btn{
+  width:130px; padding:10px;
+  border:4px; border:2px solid #592b18;
+  font-size:16px; font-weight:700;
+  text-align:center; display:block;
+  transition:0.4s; color:#592b18;
+  transform:translateX(130px);
+  border-radius:3px;
+}
+.detail_btn:hover{
+  color:#fff;
+  background:#592b18;
+}
+.fadeIn{
+  /* display:none; 애니메이션 안 먹힘 */
+  opacity:0;
+}
+
+/* 공지사항 서식 */
+.notice{
+  height:62px;
+  background: rgb(51,51,51);
+  background: linear-gradient(90deg, rgba(51,51,51,1) 61.6%, rgba(246,245,239,1) 61.6%);
+}
+.n_inner{
+  width:1100px;
+  margin:0px auto;
+  display:flex;
+}
+.n_inner__left{
+  width:70%;
+  display:flex;
+  overflow:hidden;
+  background:#333;
+}
+.n_inner__left>h2{
+  width:150px;
+  font-size:25px;
+  color:#fff;
+  float:left;
+  display:flex;
+  align-items:center;
+}
+.n_inner__right{
+  width:30%;height:62px;
+  display:flex;
+  justify-content:center;
+}
+.n_inner__right h2{
+  width:100px;
+  color:#333;
+}
+.n_inner__right i{
+  font-size:30px;
+  padding:15px 20px 0px 0px;
+}
+.s_notice {
+  width: 100%;height: 62px;
+  overflow:hidden;}
+.s_notice .swiper-slide {
+  font-size: 18px;
+  color:#fff;
+  text-align:left;
+  display:flex;
+  align-items:center;
+}
+
+.s_notice .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.s_notice .swiper-slide a{
+  font-size:12px;color:#fff;
+}
+
+/* +기호 버튼 서식 */
+.n_inner__left i{
+  font-size:30px;
+  color:#fff;
+  padding:15px 20px 0px 0px;
+}
+
+.n_inner__right i{
+  font-size: 30px;
+  padding: 15px 20px 0px 0px;
+}
+
+/* 프로모션 서식 */
+.promotion{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: #f6f5ef;
+  position: relative;
+}
+.promotion > h2{display: none;}
+.proSlide{
+  position: relative;
+  width: calc(819px * 3 + 10px * 2);
+  height: 653px;
+  flex-shrink: 0;
+}
+.proSlide .swiper-slide{
+  text-align: center;
+}
