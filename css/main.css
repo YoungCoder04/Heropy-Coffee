@@ -415,12 +415,14 @@ main{
 .reserve-coffee .reserve-logo{
   position:absolute;
   top:110px;
-  left:0;
+  left:-200px;
+  transform:translateX(-250px);
 }
-.reserve-coffee .txt_group{
+.reserve-coffee .txt-group{
+  margin-top:150pxx;
   position:absolute;
   top:124px;
-  left:208px;
+  left:0px;
 }
 .reserve-coffee .product{
   position:absolute;
